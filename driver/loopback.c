@@ -100,8 +100,6 @@ loopback_init(void)
     dev->alen = 0; /* non address */
     dev->ops = &loopback_ops;
 
-    // ここまで
-
     lo = memory_alloc(sizeof(*lo));
     if (!lo) {
         errorf("memory_alloc() failure");
